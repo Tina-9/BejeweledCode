@@ -29,13 +29,13 @@ public class DisplayManager
             for (int j = 0; j < board.Cols; j++)
             {
                 Gem? gem = board.GetGem(i, j);
-                if (gem != null)
+                if (gem == null)
                 {
-                    Console.Write(gem.getColor() + " ");
+                    Console.Write(". ");
                 }
                 else
                 {
-                    Console.Write(". ");
+                    Console.Write(gem.getColor() + " ");
                 }
             }
             Console.WriteLine();

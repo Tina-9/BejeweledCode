@@ -23,6 +23,7 @@ public class GameController
     public void Start()
     {
         board.BoardFill();
+        CheckForMatches();  // Check for initial matches
         displayManager.DisplayInstructions();
         GameLoop();
     }
