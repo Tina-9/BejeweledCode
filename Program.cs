@@ -2,9 +2,7 @@
 {
     static void Main(string[] args)
     {
-        Board board = new Board(5, 5);
-
-        board.BoardFill();
-        board.Display();
+        GameController controller = new GameController(5, 5);
+        controller.Start();
     }
 }

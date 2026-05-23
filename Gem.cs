@@ -37,4 +37,10 @@ public class Gem
     {
         return color;
     }
+
+    public void SetPosition(int newRow, int newCol)
+    {
+        row = newRow;
+        col = newCol;
+    }
 }
